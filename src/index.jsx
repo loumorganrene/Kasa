@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import '@fontsource/montserrat'
+import './styles/normalize.css'
 import './styles/index.css'
 import Home from './pages/Home'
 import Error from './components/Error'
