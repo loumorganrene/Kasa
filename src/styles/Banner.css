@@ -6,11 +6,10 @@
 
 .home_hero_img {
     position: absolute;
-    background-image: url('../assets/home_hero_img_d.png');
-    background-size: 100%;
     width: 100%;
     height: 100%;
     border-radius: 25px;
+    object-fit: cover;
 }
 
 .transparent {
