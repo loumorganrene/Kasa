@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom'
 import '../../styles/Error.css'
+import ErrorImg from '../../assets/404.svg'
 
 function Error() {
     return (
-        <div className="container">
             <div className="errorMsg">
-                <h2>404</h2>
+                <img src={ErrorImg} alt='404' />
                 <p>Oups! La page que vous demandez n'existe pas.</p>
-                <span className="home_link">
+                <p className="home_link">
                     <Link to="/">Retourner sur la page d’accueil</Link>
-                </span>
+                </p>
             </div>
-        </div>
     )
 }
 

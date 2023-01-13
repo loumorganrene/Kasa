@@ -1,25 +1,24 @@
 .errorMsg {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    color: var(--primary-clr);
+    max-width: 90vw;
+    height: 100vh;
     align-items: center;
-    justify-content: center;
+    color: var(--primary-clr);
 }
 
-.errorMsg h2 {
-    margin: 4%;
-    font-size: 300px;
-    font-weight: 700;
+.errorMsg img {
+    margin: 10rem 0 5rem;
+
 }
 
 .errorMsg p {
-    margin: 0 0 10% 0;
-    font-size: 35px;
-    font-weight: 500;
+    margin: 0 0 5rem;
+    font-size: 2rem;
 }
 
-.home_link {
+.errorMsg .home_link {
+    margin: 0;
+    font-size: 1rem;
     text-decoration: underline;
-    font-size: 18px;
 }

@@ -2,15 +2,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
     list-style-type: none;
-    width: 300px;
     color: var(--primary-clr);
-    font-size: 24px;
+    font-size: 1.5rem;
+    gap: 5rem;
 }
