@@ -8,7 +8,6 @@ import About from './pages/About'
 import Housing from './pages/Housing'
 import reportWebVitals from './reportWebVitals'
 
-
 const router = createBrowserRouter([
     {
         path: '/',
@@ -16,13 +15,13 @@ const router = createBrowserRouter([
         errorElement: <Error />,
     },
     {
-        path: 'about/',
+        path: '/about',
         element: <About />,
     },
     {
-        path: 'housing/:housingId',
+        path: '/housing/:housingId',
         element: <Housing />,
-    }
+    },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
