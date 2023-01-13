@@ -19,7 +19,7 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-h1 {
+.home_hero_text {
     position: relative;
     top: 45%;
     left: 30%;

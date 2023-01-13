@@ -1,0 +1,25 @@
+.errorMsg {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--primary-clr);
+    align-items: center;
+    justify-content: center;
+}
+
+.errorMsg h2 {
+    margin: 4%;
+    font-size: 300px;
+    font-weight: 700;
+}
+
+.errorMsg p {
+    margin: 0 0 10% 0;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.home_link {
+    text-decoration: underline;
+    font-size: 18px;
+}

@@ -12,7 +12,7 @@ function Home() {
                     alt="Home Hero"
                 />
                 <div className="transparent">
-                    <h1>Chez vous, partout et ailleurs</h1>
+                    <h1 className="home_hero_text">Chez vous, partout et ailleurs</h1>
                 </div>
             </Banner>
         </div>

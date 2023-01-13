@@ -3,7 +3,7 @@ function Housing() {
     return (
         <div>
             <Header />
-            <h1> Fiche de logement</h1>
+            <h2> Fiche de logement</h2>
         </div>
     )
 }
