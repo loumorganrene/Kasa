@@ -3,7 +3,7 @@ function About() {
     return (
         <div>
             <Header />
-            <h1> Page A propos 🏠</h1>
+            <h1> Page A propos</h1>
         </div>
     )
 }
