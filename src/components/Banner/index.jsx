@@ -1,9 +1,10 @@
 import '../../styles/Banner.css'
 
-function Banner({ children }) {
+function Banner({ children, imageUrl }) {
     return (
-        <div class="brigthnessFilter">
-            {children}
+        <div className="brigthnessFilter">
+            <img className="home_hero_img" src={imageUrl} alt="Home Hero" />
+            <div className="transparent">{children ? children : null}</div>
         </div>
     )
 }
