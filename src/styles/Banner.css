@@ -25,6 +25,6 @@
     left: 30%;
     width: 50%;
     color: white;
-    font-size: 45px;
+    font-size: clamp(1.5rem,3rem,4vw);
     font-weight: 500;
 }

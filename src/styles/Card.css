@@ -1,0 +1,36 @@
+.housing-card {
+    list-style-type: none;
+    max-width: 100%;
+    height: 28em;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.housing-card img {
+    border-radius: 10px;
+    max-width: 28em;
+    height: 28em;
+}
+
+.housing__cover {
+    object-fit: cover;
+    
+}
+
+.housing-card h3 {
+    position: relative;
+    top: -3em;
+    left: 1.5em;
+    color: #FFFFFF;
+    font-size: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    width: 22em;
+}
+
+.housing__title {
+    text-overflow: ellipsis;
+}

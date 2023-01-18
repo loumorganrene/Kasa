@@ -1,6 +1,6 @@
-// import Header from '../../components/Header'
 import Banner from '../../components/Banner'
 import HeroImg from '../../assets/home_hero_img_d.png'
+import HousingList from '../../components/HousingList'
 
 
 function Home() {
@@ -11,6 +11,7 @@ function Home() {
                     Chez vous, partout et ailleurs
                 </h1>
             </Banner>
+            <HousingList />
         </div>
     )
 }

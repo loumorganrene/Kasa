@@ -1,0 +1,47 @@
+.housing-list--container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    margin: 3em 0;
+    padding: 4em 2em;
+}
+
+/* .housing-list {    
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 4em 2em;
+  margin: 0;
+
+  justify-items: center;
+  align-items: center;
+  row-gap: 4em;
+} */
+
+.housing-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    row-gap: 4em;
+}
+
+.housing-list > * {
+    flex-basis: 30%;
+}
+
+.housing-list::after {
+  content: "";
+  flex-basis: 28em;
+}
+
+.housing-list li {
+    list-style-type: none;
+    max-width: fit-content;
+    height: max-content;
+}
+
+
