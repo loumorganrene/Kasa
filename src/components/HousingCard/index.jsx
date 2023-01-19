@@ -29,7 +29,7 @@ function HousingCard({
             <section className="house-quality">
                 <ul className='tags'>
                     {tags.map((tag) => {
-                        return <li key={`1${tag}`}>{tag}</li>
+                        return <li key={`tag-${tag}`}>{tag}</li>
                     })}
                 </ul>
                 <RatingScale rating={rating} />
@@ -45,7 +45,7 @@ function HousingCard({
                     aboutContent={
                         <ul className='equipments'>
                             {equipments.map((equip) => {
-                                return <li key={`1${equip}`}>{equip}</li>
+                                return <li key={`equip-${equip}`}>{equip}</li>
                             })}
                         </ul>
                     }

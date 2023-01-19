@@ -10,6 +10,7 @@ function Housing() {
         <div className="housing-content">
             {Logements.filter((house) => house.id === id.housingId).map(
                 ({
+                    id,
                     title,
                     location,
                     description,
@@ -19,6 +20,7 @@ function Housing() {
                     equipments
                 }) => (
                     <HousingCard
+                        key={id}
                         title={title}
                         location={location}
                         description={description}

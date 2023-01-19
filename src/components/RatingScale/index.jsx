@@ -8,9 +8,9 @@ function RatingScale({ rating }) {
         <ul className="rating">
             {range.map((rangeElem) =>
                 rating >= rangeElem ? (
-                        <img key={rangeElem.toString()} src={redStar} alt="" />
+                    <img key={rangeElem.toString()} src={redStar} alt="" />
                 ) : (
-                    <img src={greyStar} alt="" />
+                    <img key={rangeElem.toString()} src={greyStar} alt="" />
                 )
             )}
         </ul>
