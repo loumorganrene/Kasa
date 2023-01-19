@@ -1,5 +1,5 @@
 import Logements from '../../datas/logements.json'
-import Card from '../Card'
+import HomeCard from '../HomeCard'
 import '../../styles/HousingList.css'
 
 function HousingList() {
@@ -7,7 +7,7 @@ function HousingList() {
         <div className="housing-list--container">
             <ul className="housing-list">
                 {Logements.map(({ id, cover, title }) => (
-                    <Card key= {id} cover={cover} title={title} />
+                    <HomeCard key= {id} cover={cover} title={title} id={id} />
                 ))}
             </ul>
         </div>

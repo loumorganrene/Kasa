@@ -1,8 +1,7 @@
 .collapsible--container {
-    background-color: var(--grey-clr);
-    width: 100%;
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 .collapsible--container h3 {
@@ -17,9 +16,13 @@
 }
 
 .collapsible--container p {
+    background-color: var(--grey-clr);
     color: var(--primary-clr);
     padding: 0.5em 1em;
     font-weight: 400;
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
 }
 
 .arrow {

@@ -9,6 +9,12 @@ body {
   height: 100vh;
 }
 
+p {
+  line-height: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
 .page--container {
   display: flex;
   flex-direction: column;
