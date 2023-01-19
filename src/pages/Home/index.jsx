@@ -5,14 +5,14 @@ import HousingList from '../../components/HousingList'
 
 function Home() {
     return (
-        <div>
+        <main>
             <Banner imageUrl={HeroImg}>
                 <h1 className="home_hero_text">
                     Chez vous, partout et ailleurs
                 </h1>
             </Banner>
             <HousingList />
-        </div>
+        </main>
     )
 }
 

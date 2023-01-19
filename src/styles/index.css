@@ -9,6 +9,12 @@ body {
   height: 100vh;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 p {
   line-height: 2rem;
   padding: 0;
