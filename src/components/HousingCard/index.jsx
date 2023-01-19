@@ -38,7 +38,7 @@ function HousingCard({
             <section className="house-details">
                 <div className="collapsible--container">
                     <h3>Description</h3>
-                    <p>{description}</p>
+                    <p className='content'>{description}</p>
                 </div>
                 <Collapsible
                     aboutTitle="Équipements"

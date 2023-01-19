@@ -16,7 +16,7 @@ function Collapsible({ aboutTitle, aboutContent }) {
                 {aboutTitle}
                 <span className={'arrow' + (open ? ' down' : ' up')} />
             </h3>
-            {open && <p>{aboutContent}</p>}
+            {open && <div className='content'>{aboutContent}</div>}
         </div>
     )
 }

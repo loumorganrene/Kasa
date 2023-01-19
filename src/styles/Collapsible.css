@@ -15,7 +15,7 @@
     font-weight: 500;
 }
 
-.collapsible--container p {
+.collapsible--container .content {
     background-color: var(--grey-clr);
     color: var(--primary-clr);
     padding: 0.5em 1em;
@@ -33,14 +33,14 @@
     padding: .5rem;
 }
 
-.up {
+.down {
     bottom: 25%;
     right: 2.5rem;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
 
-.down {
+.up {
     bottom: 45%;
     right: 2.5rem;
     transform: rotate(45deg);
