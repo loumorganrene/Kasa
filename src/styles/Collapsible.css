@@ -1,0 +1,45 @@
+.collapsible--container {
+    background-color: var(--grey-clr);
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.collapsible--container h3 {
+    position: relative;
+    background-color: var(--primary-clr);
+    max-width: 100%;
+    margin: 0;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.collapsible--container p {
+    color: var(--primary-clr);
+    padding: 0.5em 1em;
+    font-weight: 400;
+}
+
+.arrow {
+    position: absolute;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: .5rem;
+}
+
+.up {
+    bottom: 25%;
+    right: 2.5rem;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    bottom: 45%;
+    right: 2.5rem;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}

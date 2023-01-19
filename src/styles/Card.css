@@ -1,34 +1,36 @@
 .housing-card {
     list-style-type: none;
-    max-width: 100%;
+    max-width: 28em;
     height: 28em;
     margin: 0;
     padding: 0;
     overflow: hidden;
     border-radius: 10px;
+    background: linear-gradient(180deg, var(--primary-clr) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .housing-card img {
     border-radius: 10px;
     max-width: 28em;
     height: 28em;
+    filter: brightness(80%);
 }
 
 .housing__cover {
     object-fit: cover;
-    
 }
 
 .housing-card h3 {
     position: relative;
-    top: -3em;
+    bottom: 3em;
     left: 1.5em;
-    color: #FFFFFF;
-    font-size: 1rem;
-    overflow: hidden;
-    white-space: nowrap;
+    color: white;
+    font-size: 1.2rem;
+    /* overflow: hidden;
+    white-space: nowrap; */
     margin: 0;
-    width: 22em;
+    width: 13em;
+    font-weight: 500;
 }
 
 .housing__title {

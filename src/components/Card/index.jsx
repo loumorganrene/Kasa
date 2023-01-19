@@ -7,7 +7,7 @@ function Card({ id, cover, title }) {
                 <img
                     className="housing__cover"
                     src={cover}
-                    alt={`${title} cover`}
+                    alt={`${title}`}
                 />
                 <h3 className="housing__title">{title}</h3>
             </div>

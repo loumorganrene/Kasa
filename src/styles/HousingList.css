@@ -1,7 +1,7 @@
 .housing-list--container {
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
+    background-color: var(--grey-clr);
     border-radius: 25px;
     margin: 3em 0;
     padding: 4em 2em;
@@ -40,8 +40,8 @@
 
 .housing-list li {
     list-style-type: none;
-    max-width: fit-content;
-    height: max-content;
+    max-width: 28em;
+    height: 28em;
 }
 
 
