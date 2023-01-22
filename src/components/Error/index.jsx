@@ -3,6 +3,7 @@ import '../../styles/Error.css'
 import ErrorImg from '../../assets/404.svg'
 
 function Error() {
+
     return (
             <div className="errorMsg">
                 <img src={ErrorImg} alt='404' />

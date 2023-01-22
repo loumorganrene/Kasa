@@ -40,6 +40,7 @@ function HousingCard({
                     <h3>Description</h3>
                     <p className='content'>{description}</p>
                 </div>
+                {/* Modifier en collapsible */}
                 <Collapsible
                     aboutTitle="Équipements"
                     aboutContent={

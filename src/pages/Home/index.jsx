@@ -1,6 +1,7 @@
 import Banner from '../../components/Banner'
 import HeroImg from '../../assets/home_hero_img_d.png'
 import HousingList from '../../components/HousingList'
+import Error from '../../components/Error'
 
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
                 </h1>
             </Banner>
             <HousingList />
+            <Error />
         </main>
     )
 }

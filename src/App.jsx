@@ -11,12 +11,12 @@ import Header from './components/Header'
 
 function App() {
     return (
-        <div className='page--container'>
-            <div className='content--container'>
+        <div className="page--container">
+            <div className="content--container">
                 <Router>
                     <Header />
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route exact path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/housing/:housingId" element={<Housing />} />
                         <Route path="*" element={<Error />} />
@@ -29,5 +29,3 @@ function App() {
 }
 
 export default App
-
-

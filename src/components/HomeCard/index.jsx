@@ -6,7 +6,7 @@ function HomeCard({ id, cover, title }) {
 
     return (
         <li key={id}>
-            <Link to={`/housing/${id}?${title.replace(/\s/g, '_')}`}>
+            <Link to={`/housing/${id}`}>
                 <div className="housing-card">
                     <img
                         className="housing__cover"
@@ -19,5 +19,5 @@ function HomeCard({ id, cover, title }) {
         </li>
     )
 }
-
+// ?${title.replace(/\s/g, '_')}
 export default HomeCard

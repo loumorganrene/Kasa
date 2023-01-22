@@ -80,14 +80,12 @@ pre {
  */
 
 a,
-a:link {
+a:link,
+a:active {
+  text-decoration-style: none;
   background-color: transparent;
   text-decoration: none;
   color: var(--primary-clr);
-}
-
-a:active {
-  text-decoration: underline;
 }
 
 /**

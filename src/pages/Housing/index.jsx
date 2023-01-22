@@ -1,39 +1,34 @@
 import { useParams } from 'react-router-dom'
 import Logements from '../../datas/logements.json'
 import HousingCard from '../../components/HousingCard'
+import Error from '../../components/Error'
 
 function Housing() {
-    const id = useParams()
-    console.log(id)
+    const param = useParams()
+    const house = Logements.find((house) => house.id === param.housingId)
+
+    if (!house) {
+        return <Error />
+    }
 
     return (
-        <div className="housing-content">
-            {Logements.filter((house) => house.id === id.housingId).map(
-                ({
-                    id,
-                    title,
-                    location,
-                    description,
-                    host,
-                    rating,
-                    tags,
-                    equipments
-                }) => (
-                    <HousingCard
-                        key={id}
-                        title={title}
-                        location={location}
-                        description={description}
-                        hostName={host.name}
-                        hostPict={host.picture}
-                        rating={rating}
-                        tags={tags}
-                        equipments={equipments}
-                    />
-                )
-            )}
-        </div>
+        <main className="housing-content">
+            <HousingCard
+                key={house.id}
+                title={house.title}
+                location={house.location}
+                description={house.description}
+                hostName={house.host.name}
+                hostPict={house.host.picture}
+                rating={house.rating}
+                tags={house.tags}
+                equipments={house.equipments}
+            />
+        </main>
     )
 }
+
+
+
 
 export default Housing

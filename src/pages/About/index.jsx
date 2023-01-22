@@ -4,7 +4,7 @@ import HeroImg from '../../assets/about_hero_img_d.png'
 import '../../styles/About.css'
 function About() {
     return (
-        <div>
+        <main>
             <Banner imageUrl={HeroImg} />
             <div className="collapsible-list--container">
                 <Collapsible
@@ -32,7 +32,7 @@ function About() {
                     Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
                 />
             </div>
-        </div>
+        </main>
     )
 }
 
