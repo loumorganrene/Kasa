@@ -22,12 +22,16 @@ function HousingCard({
                 </div>
                 <div className="host">
                     <h3>{hostName}</h3>
-                    <img className="hostPict" src={hostPict} alt={`${hostName}`} />
+                    <img
+                        className="hostPict"
+                        src={hostPict}
+                        alt={`${hostName}`}
+                    />
                 </div>
             </section>
 
             <section className="house-quality">
-                <ul className='tags'>
+                <ul className="tags">
                     {tags.map((tag) => {
                         return <li key={`tag-${tag}`}>{tag}</li>
                     })}
@@ -36,15 +40,14 @@ function HousingCard({
             </section>
 
             <section className="house-details">
-                <div className="collapsible--container">
-                    <h3>Description</h3>
-                    <p className='content'>{description}</p>
-                </div>
-                {/* Modifier en collapsible */}
+                <Collapsible
+                    aboutTitle="Description"
+                    aboutContent={ description }
+                />
                 <Collapsible
                     aboutTitle="Équipements"
                     aboutContent={
-                        <ul className='equipments'>
+                        <ul className="equipments">
                             {equipments.map((equip) => {
                                 return <li key={`equip-${equip}`}>{equip}</li>
                             })}
