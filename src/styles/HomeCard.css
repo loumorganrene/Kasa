@@ -6,14 +6,34 @@
     padding: 0;
     overflow: hidden;
     border-radius: 10px;
-    background: linear-gradient(180deg, var(--primary-clr) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(
+        180deg,
+        var(--primary-clr) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    position: relative;
+}
+
+.housing-card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgb(0, 0, 0, 0) 0%,
+        rgb(0, 0, 0, 0) 75%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    z-index: 1;
 }
 
 .housing-card img {
     border-radius: 10px;
     max-width: 28em;
     height: 28em;
-    filter: brightness(80%);
 }
 
 .housing__cover {
@@ -35,4 +55,5 @@
 
 .housing__title {
     text-overflow: ellipsis;
+    z-index: 2;
 }
