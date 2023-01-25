@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import Logements from '../../datas/logements.json'
 import HousingCard from '../../components/HousingCard'
 import Error from '../../components/Error'
+import Slideshow from '../../components/Slideshow'
 
 function Housing() {
     const param = useParams()
@@ -13,6 +14,7 @@ function Housing() {
 
     return (
         <main className="housing-content">
+            <Slideshow children={house.pictures}/>
             <HousingCard
                 key={house.id}
                 title={house.title}
