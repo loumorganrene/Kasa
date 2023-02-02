@@ -38,9 +38,9 @@
 /** TITLE & LOCALISATION */
 
 .id h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    margin: 0;
+    margin: 0 0 1rem;
     padding: 0;
 }
 
@@ -48,32 +48,44 @@
     display: flex;
     column-gap: 1rem;
     list-style-type: none;
+    height: 30px;
     padding: 0;
     margin: 0;
 }
 
 .tags li {
+    white-space: nowrap;
+    text-overflow: '';
     background: var(--primary-clr);
     border-radius: 10px;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     color: white;
+    font-size: 0.8rem;
 }
 
+
 @media (min-width: 900px) {
+    .id h2 {
+        font-size: 2rem;
+    }
+
+    .tags li {
+        padding: 0.5rem 2rem;
+    }
 }
 
 /** RATING & HOST ID */
 
 .rating {
-    height: 25px;
-    width: 80%;
+    height: 20px;
+    width: 95%;
     padding: 0;
     margin: 0;
 }
 
 .rating img {
     margin-right: 0.5rem;
-    height: 25px;
+    height: 20px;
 }
 
 .host {
