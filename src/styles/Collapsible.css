@@ -1,6 +1,6 @@
 .collapsible--container {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
     width: 100%;
 }
 
@@ -28,21 +28,41 @@
 .arrow {
     position: absolute;
     border: solid white;
-    border-width: 0 3px 3px 0;
+    border-width: 0 2px 2px 0;
     display: inline-block;
-    padding: .5rem;
+    padding: 0.4rem;
 }
 
 .down {
     bottom: 25%;
-    right: 2.5rem;
+    right: 1rem;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
 
 .up {
     bottom: 45%;
-    right: 2.5rem;
+    right: 1rem;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+@media (min-width: 900px) {
+    .collapsible--container {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .arrow {
+        border-width: 0 3px 3px 0;
+        padding: 0.5rem;
+    }
+
+    .down {
+        right: 2.5rem;
+    }
+
+    .up {
+        right: 2.5rem;
+    }
 }
