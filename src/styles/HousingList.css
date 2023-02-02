@@ -23,15 +23,15 @@
     background-color: var(--grey-clr);
     border-radius: 25px;
     margin: 3em 0;
-    padding: 4em 2em;
+    padding: 4em 3em;
 }
 
 .housing-list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    row-gap: 4em;
+    row-gap: 4rem;
 }
 
 .housing-list > * {
@@ -40,12 +40,12 @@
 
 .housing-list::after {
   content: "";
-  flex-basis: 28em;
+  flex-basis: 34em;
 }
 
 .housing-list li {
-    max-width: 28em;
-    height: 28em;
+    max-width: 34em;
+    height: 34em;
 }
 }
 

@@ -30,7 +30,7 @@
 
 .housing-card img {
     border-radius: 10px;
-    min-width: 100%;
+    width: 100%;
     height: 100%;
 }
 
@@ -56,14 +56,13 @@
 
 @media (min-width: 1091px) {
     .housing-card {
-        max-width: 28em;
-        height: 28em;
+        height: 34em;
         margin: 0;
         padding: 0;
     }
 
     .housing-card img {
-        height: 28em;
+        height: 34em;
     }
 
     .housing-card h3 {
