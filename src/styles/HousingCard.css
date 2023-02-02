@@ -29,7 +29,7 @@
     column-gap: 5rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1091px) {
     .housingCard--container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -81,7 +81,7 @@
     font-size: 0.8rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1091px) {
     .id h2 {
         font-size: 2rem;
     }
@@ -125,7 +125,7 @@
     border-radius: 100%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1091px) {
     .rating {
         height: 35px;
         width: fit-content;

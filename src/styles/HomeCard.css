@@ -1,5 +1,6 @@
 .housing-card {
     list-style-type: none;
+
     height: 20em;
     overflow: hidden;
     border-radius: 10px;
@@ -29,8 +30,8 @@
 
 .housing-card img {
     border-radius: 10px;
-    max-width: 28em;
-    height: 20em;
+    min-width: 100%;
+    height: 100%;
 }
 
 .housing__cover {
@@ -53,7 +54,7 @@
     z-index: 2;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1091px) {
     .housing-card {
         max-width: 28em;
         height: 28em;

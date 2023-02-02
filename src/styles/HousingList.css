@@ -18,7 +18,7 @@
     height: 20em;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1091px) {
   .housing-list--container {
     background-color: var(--grey-clr);
     border-radius: 25px;

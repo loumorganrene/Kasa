@@ -22,7 +22,7 @@ nav ul {
     border-bottom: solid 2px var(--primary-clr);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1091px) {
     header img {
         max-width: auto;
     }

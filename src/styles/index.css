@@ -1,42 +1,48 @@
 :root {
-   --primary-clr: #FF6060;
-   --grey-clr: #f6f6f6;
+    --primary-clr: #ff6060;
+    --grey-clr: #f6f6f6;
 }
 
 body {
-  box-sizing: border-box;
-  margin: 0;
-  height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    height: 100vh;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 p {
-  line-height: 2rem;
-  padding: 0;
-  margin: 0;
+    line-height: 2rem;
+    padding: 0;
+    margin: 0;
 }
 
 .page--container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: space-between;
-  font-family: "Montserrat";
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    margin: 0;
 }
 
 .content--container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 2rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 8rem;
 }
 
 code {
-  font-family: "Montserrat";
+    font-family: 'Montserrat';
+}
+
+@media (min-width: 300px) {
+    .content--container {
+        margin: 1rem;
+    }
 }

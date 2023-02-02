@@ -32,22 +32,17 @@ function Slideshow({ children }) {
                         }
                     >
                         <img src={picture} alt="" />
-                        {children.length === 1 ? (
-                            <p></p>
-                        ) : (
-                            <p className="img-index">
-                                {index + 1}/{children.length}
-                            </p>
-                        )}
                     </div>
                 )
             })}
-            {children.length === 1 ? (
-                <div></div>
-            ) : (
+            {children.length > 1 && (
                 <div>
                     <ArrowNav changeSlide={nextSlide} direction="next" />
                     <ArrowNav changeSlide={prevSlide} direction="prev" />
+
+                    <p className="img-index">
+                        {slideIndex}/{children.length}
+                    </p>
                 </div>
             )}
         </div>

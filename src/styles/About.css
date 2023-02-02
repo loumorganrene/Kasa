@@ -7,7 +7,7 @@
     margin: 1.5em 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1091px) {
     .collapsible-list--container {
         margin: 3em 0;
         padding: 0 8em;

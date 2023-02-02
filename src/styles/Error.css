@@ -25,7 +25,7 @@
     text-decoration: underline;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1091px) {
     .errorMsg img {
         margin: 10rem 0 5rem;
     }
