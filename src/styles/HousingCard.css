@@ -30,8 +30,26 @@
 }
 
 @media (min-width: 900px) {
+    .housingCard--container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 1rem 0;
+    }
+
+    .house-infos {
+        flex-direction: column;
+    }
+
     .house-quality {
-        margin: 2rem 0 2.7rem;
+        flex-direction: column-reverse;
+        margin: 0 0 2.7rem;
+        row-gap: 1.5rem;
+    }
+
+    .house-details {
+        width: 100%;
+        flex-direction: row;
     }
 }
 
@@ -62,7 +80,6 @@
     color: white;
     font-size: 0.8rem;
 }
-
 
 @media (min-width: 900px) {
     .id h2 {
@@ -111,7 +128,7 @@
 @media (min-width: 900px) {
     .rating {
         height: 35px;
-        width: 100%;
+        width: fit-content;
     }
 
     .rating img {
@@ -141,7 +158,4 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-@media (min-width: 900px) {
 }
