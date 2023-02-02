@@ -1,52 +1,47 @@
+/** CONTAINERS */
+
 .housingCard--container {
     display: flex;
     flex-direction: column;
+    color: var(--primary-clr);
 }
 
 .house-infos {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--primary-clr);
+    flex-direction: column;
     font-weight: 500;
     margin: 0;
     padding: 0;
-}
-
-.id h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-}
-
-.host {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-}
-
-.host h3 {
-    align-self: center;
-    width: 50%;
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: right;
-    padding: 0;
-}
-
-.host img {
-    width: 64px;
-    height: 64px;
-    border-radius: 100%;
+    row-gap: 1rem;
 }
 
 .house-quality {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2rem 0 2.7rem;
+    margin: 1em 0;
+}
+
+.house-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 5rem;
+}
+
+@media (min-width: 900px) {
+    .house-quality {
+        margin: 2rem 0 2.7rem;
+    }
+}
+
+/** TITLE & LOCALISATION */
+
+.id h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
 }
 
 .tags {
@@ -60,26 +55,74 @@
 .tags li {
     background: var(--primary-clr);
     border-radius: 10px;
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
     color: white;
 }
 
+@media (min-width: 900px) {
+}
+
+/** RATING & HOST ID */
+
 .rating {
-    height: 35px;
+    height: 25px;
+    width: 80%;
     padding: 0;
     margin: 0;
 }
 
 .rating img {
-    margin-right: .5rem;
-    height: 35px
+    margin-right: 0.5rem;
+    height: 25px;
 }
 
-.house-details {
+.host {
     display: flex;
     justify-content: space-between;
-    column-gap: 5rem;
 }
+
+.host h3 {
+    align-self: center;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: right;
+    margin: 0;
+}
+
+.host img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+@media (min-width: 900px) {
+    .rating {
+        height: 35px;
+        width: 100%;
+    }
+
+    .rating img {
+        margin-right: 0.5rem;
+        height: 35px;
+    }
+
+    .host h3 {
+        align-self: center;
+        width: 50%;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: right;
+        padding: 0;
+    }
+
+    .host img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+/** DESCRIPTION & EQUIPMENTS */
 
 .equipments {
     line-height: 2rem;
@@ -88,5 +131,5 @@
     margin: 0;
 }
 
-
-
+@media (min-width: 900px) {
+}

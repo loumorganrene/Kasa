@@ -20,6 +20,15 @@ function HousingCard({
                     <h2>{title}</h2>
                     <p>{location}</p>
                 </div>
+                <ul className="tags">
+                    {tags.map((tag) => {
+                        return <li key={`tag-${tag}`}>{tag}</li>
+                    })}
+                </ul>
+            </section>
+
+            <section className="house-quality">
+                <RatingScale rating={rating} />
                 <div className="host">
                     <h3>{hostName}</h3>
                     <img
@@ -30,19 +39,10 @@ function HousingCard({
                 </div>
             </section>
 
-            <section className="house-quality">
-                <ul className="tags">
-                    {tags.map((tag) => {
-                        return <li key={`tag-${tag}`}>{tag}</li>
-                    })}
-                </ul>
-                <RatingScale rating={rating} />
-            </section>
-
             <section className="house-details">
                 <Collapsible
                     aboutTitle="Description"
-                    aboutContent={ description }
+                    aboutContent={description}
                 />
                 <Collapsible
                     aboutTitle="Équipements"
