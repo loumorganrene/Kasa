@@ -2,22 +2,36 @@
     display: flex;
     flex-direction: column;
     max-width: 90vw;
-    height: 100vh;
     align-items: center;
     color: var(--primary-clr);
+    padding: 0;
 }
 
 .errorMsg img {
-    margin: 10rem 0 5rem;
+    max-width: 50%;
+    width: 60%;
+    margin: 10rem 0 1rem;
 }
 
 .errorMsg p {
-    margin: 0 0 5rem;
-    font-size: 2rem;
+    margin: 0 1rem 5rem;
+    font-size: 1.4rem;
+    text-align: center;
 }
 
 .errorMsg .home_link {
     margin: 0;
     font-size: 1rem;
     text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+    .errorMsg img {
+        margin: 10rem 0 5rem;
+    }
+
+    .errorMsg p {
+        margin: 0 0 5rem;
+        font-size: 2rem;
+    }
 }
