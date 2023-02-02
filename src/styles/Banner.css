@@ -1,30 +1,52 @@
 .brigthnessFilter {
     position: relative;
-    height: 300px;
-    border-radius: 25px;
+    height: 150px;
+    border-radius: 15px;
 }
 
 .home_hero_img {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 15px;
     object-fit: cover;
 }
 
 .transparent {
     position: relative;
-    height: 300px;
-    border-radius: 25px;
+    height: 150px;
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 .home_hero_text {
     position: relative;
+    top: 40px;
+    left: 20px;
+    width: 73%;
+    color: white;
+    font-weight: 500;
+}
+
+@media (min-width: 900px) {
+.brigthnessFilter {
+    height: 300px;
+    border-radius: 25px;
+}
+
+.home_hero_img {
+    border-radius: 25px;
+}
+
+.transparent {
+    height: 300px;
+    border-radius: 25px;
+}
+
+.home_hero_text {
     top: 45%;
     left: 30%;
     width: 50%;
-    color: white;
-    font-size: clamp(1.5rem,3rem,4vw);
-    font-weight: 500;
+    font-size: clamp(1.5rem, 3rem, 4vw);
+}
 }
