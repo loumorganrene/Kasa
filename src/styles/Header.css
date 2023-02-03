@@ -23,6 +23,9 @@ nav ul {
 }
 
 @media (min-width: 1091px) {
+    header {
+        margin: 2rem 8rem;
+    }
     header img {
         max-width: auto;
     }

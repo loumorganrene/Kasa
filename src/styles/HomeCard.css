@@ -56,13 +56,13 @@
 
 @media (min-width: 1091px) {
     .housing-card {
-        height: 34em;
+        height: 30em;
         margin: 0;
         padding: 0;
     }
 
     .housing-card img {
-        height: 34em;
+        height: 30em;
     }
 
     .housing-card h3 {

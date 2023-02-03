@@ -22,7 +22,6 @@
   .housing-list--container {
     background-color: var(--grey-clr);
     border-radius: 25px;
-    margin: 3em 0;
     padding: 4em 3em;
 }
 
@@ -40,12 +39,12 @@
 
 .housing-list::after {
   content: "";
-  flex-basis: 34em;
+  flex-basis: 30%;
 }
 
 .housing-list li {
-    max-width: 34em;
-    height: 34em;
+    max-width: 30em;
+    height: 30em;
 }
 }
 
