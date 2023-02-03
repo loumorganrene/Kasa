@@ -13,7 +13,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 2rem 8rem;
 }
 
 p {
@@ -44,5 +43,11 @@ code {
 @media (min-width: 300px) {
     .content--container {
         margin: 1rem;
+    }
+}
+
+@media (min-width: 1091px) {
+    main {
+            margin: 2rem 8rem;
     }
 }
