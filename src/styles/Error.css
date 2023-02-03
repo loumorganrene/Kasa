@@ -26,6 +26,10 @@
 }
 
 @media (min-width: 1091px) {
+    .errorMsg {
+            margin: 2rem 8rem;
+    }
+    
     .errorMsg img {
         margin: 10rem 0 5rem;
     }
